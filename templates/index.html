@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzeria</title>
+</head>
+<body>
+<h1>Wellkome to my Pizzeria!</h1>
+<p>Are you hungry?</p>
+<p>MENU</p>
+<img src="https://www.koch-mit.de/app/uploads/2020/02/Pizza.jpg">
+<ul>
+    {% for menu in pizzas %}
+    <li>
+        <p>{{ menu.pizza }} - {{ menu.price }}€</p>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
