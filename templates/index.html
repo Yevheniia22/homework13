@@ -10,7 +10,7 @@
 <p>MENU</p>
 <img src="https://www.koch-mit.de/app/uploads/2020/02/Pizza.jpg">
 <ul>
-    {% for menu in pizzas %}
+    {% for menu in pizzas|sort(attribute="price")%}
     <li>
         <p>{{ menu.pizza }} - {{ menu.price }}€</p>
     </li>
