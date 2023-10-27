@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<style>
+  table,th, td {
+  border: 1px solid black;
+</style>
+<table style="width:100%">
+<tr>
+<th>Pizza</th>
+<th>Description</th>
+<th>Price</th>
+</tr>
+{%for menu in data%}
+<tr>
+<td>{{menu[0]}}</td>
+<td>{{menu[1]}}</td>
+<td>{{menu[2]}}</td>
+</tr>
+{%endfor%}
+</table>
+</body>
+</html>
